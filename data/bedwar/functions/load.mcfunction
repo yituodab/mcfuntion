@@ -4,3 +4,4 @@ team add blue
 team add yellow
 team add green
 gamerule mobGriefing false
+scoreboard objectives add snowball minecraft.used:minecraft.snowball

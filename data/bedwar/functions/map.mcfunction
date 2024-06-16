@@ -10,4 +10,4 @@ setblock ~30 ~ ~ red_bed
 setblock ~-30 ~ ~ blue_bed
 setblock ~ ~ ~30 yellow_bed
 setblock ~ ~ ~-30 green_bed
-execute positioned ~35 ~-1 ~ run fill ~2.5 ~2 ~2.5 ~-2.5 ~2 ~-2.5 red_wool
+execute positioned ~35 ~-1 ~ run function bedwar:maps/red

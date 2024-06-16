@@ -1,0 +1,1 @@
+execute as @a[scores={snowball=1..},tag=player] run function bedwar:specialitem/arrow1
