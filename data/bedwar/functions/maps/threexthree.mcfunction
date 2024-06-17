@@ -1,1 +1,0 @@
-fill ~1.5 ~ ~1.5 ~-1.5 ~ ~1.5 quartz_block
