@@ -1,0 +1,21 @@
+name: build
+
+on:
+    push:
+    workflow_dispatch:
+
+jobs:
+    release:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+        steps:
+        - uses: actions/checkout@v4
+        - name: Zip
+          run: zip -r bed.zip data pack.mcmeta
+        - name: Upload Artifact
+          uses: actions/upload-artifact@v3
+          with:
+            name: bed
+            path: bed.zip
+
