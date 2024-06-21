@@ -11,9 +11,11 @@ jobs:
             contents: write
         steps:
         - uses: actions/checkout@v4
+        - name: Remove Files
+          run: rm -rf .git .vscode .github bed.zip auto.sh
         - name: Upload Artifact
           uses: actions/upload-artifact@v3
           with:
             name: bed
-            path: data pack.mcmeta
+            path: ./*
 
